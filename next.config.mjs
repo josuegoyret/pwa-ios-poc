@@ -6,6 +6,17 @@ const withPWA = withPWAInit({
   dest: "public",
 });
 
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "res.cloudinary.com",
+        port: "",
+        pathname: "/dj0o5gtcn/**",
+      },
+    ],
+  },
+};
 
 export default withPWA(nextConfig);
